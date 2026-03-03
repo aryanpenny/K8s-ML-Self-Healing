@@ -8,9 +8,6 @@ Failure Classes (LOCKED):
 2. RESOURCE_EXHAUSTION
 3. NODE_DEGRADATION
 
-Why:
-Changing labels breaks ML validity and makes evaluation meaningless.
-
 
 
 ## ML Scope
