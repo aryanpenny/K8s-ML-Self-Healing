@@ -1,0 +1,7 @@
+{
+  "pod_restart_rate": 12,
+  "container_cpu_usage": 2,
+  "container_memory_usage": 10,
+  "node_cpu_usage": 160,
+  "node_ready_status": 1
+}

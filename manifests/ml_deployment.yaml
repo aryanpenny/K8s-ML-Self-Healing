@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ml-failure-classifier
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ml-classifier
+  template:
+    metadata:
+      labels:
+        app: ml-classifier
+    spec:
+      containers:
+      - name: ml
+        image: example/ml-service:latest
+        env:
+        - name: MODEL_PATH
+          valueFrom:
+            configMapKeyRef:
+              name: ml-config
+              key: model_path

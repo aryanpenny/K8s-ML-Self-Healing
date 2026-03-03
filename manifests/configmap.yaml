@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: ml-config
+data:
+  model_path: "/models/model.pkl"
+
